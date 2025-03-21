@@ -87,3 +87,4 @@ fs.watchFile(file, () => {
 })
 
 //----------------------[ MALVIN ]----------------------//
+global.autoStatusView = process.env.AUTO_STATUS_VIEW || true;
