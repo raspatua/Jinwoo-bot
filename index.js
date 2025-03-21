@@ -7,7 +7,7 @@ async function autoViewStatus(sock) {
                 if (chat.presences) {
                     for (let jid in chat.presences) {
                         if (jid.endsWith("@s.whatsapp.net")) {
-                            console.log(Viewing status: ${jid});
+                            console.log(`Viewing status: ${jid}`);
                             await sock.readMessages([{
                                 remoteJid: jid,
                                 id: '',
